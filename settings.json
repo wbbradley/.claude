@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "statusLine": {
+    "type": "command",
+    "command": "~/bin/statusline.sh",
+    "padding": 2
+  },
+  "env": {
+    "BASH_DEFAULT_TIMEOUT_MS": "3600000",
+    "BASH_MAX_TIMEOUT_MS": "3600000"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(/Users/wbbradley/.claude/skills)",
+      "Read(/Users/wbbradley/.local/bin/chk)",
+      "Read(/tmp/review-pr)",
+      "Search(/tmp/review-pr)",
+      "Read(~/.cargo)",
+      "Search(~/.cargo)",
+      "WebSearch"
+    ],
+    "deny": [
+      "Read(/Users/wbbradley/.ssh)",
+      "Read(/Users/wbbradley/.gnupg)",
+      "Read(/Users/wbbradley/.password-store)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{
+        "type": "command",
+        "command": "/Users/wbbradley/.local/bin/shellsafety"
+      }]
+    }]
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "showClearContextOnPlanAccept": true,
+  "voiceEnabled": true,
+  "autoMemory": false,
+  "feedbackSurveyState": {
+    "lastShownTime": 1855530480555
+  }
+}
