@@ -12,8 +12,8 @@
   "permissions": {
     "allow": [
       "Bash(*)",
-      "Read(/Users/wbbradley/.claude/skills)",
-      "Read(/Users/wbbradley/.local/bin/chk)",
+      "Read(~/.claude/skills)",
+      "Read(~/.local/bin/chk)",
       "Read(/tmp/review-pr)",
       "Search(/tmp/review-pr)",
       "Read(~/.cargo)",
@@ -21,9 +21,9 @@
       "WebSearch"
     ],
     "deny": [
-      "Read(/Users/wbbradley/.ssh)",
-      "Read(/Users/wbbradley/.gnupg)",
-      "Read(/Users/wbbradley/.password-store)"
+      "Read(~/.ssh)",
+      "Read(~/.gnupg)",
+      "Read(~/.password-store)"
     ]
   },
   "hooks": {
@@ -31,7 +31,7 @@
       "matcher": "Bash",
       "hooks": [{
         "type": "command",
-        "command": "/Users/wbbradley/.local/bin/shellsafety"
+        "command": "shellsafety"
       }]
     }]
   },
