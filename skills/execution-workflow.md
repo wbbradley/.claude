@@ -10,8 +10,8 @@ When in a cargo workspace, check compilation by running `chk` (never `cargo chec
 
 ### Verify
 
-1. Run `chk` to ensure formatting and linting pass.
-2. Run `cargo nextest run` (and any other relevant test commands).
+1. Run the project's build/lint command (Rust: `chk`, Haskell: `cabal build`, etc.).
+2. Run the project's test suite (Rust: `cargo nextest run`, Haskell: `cabal test`, etc.).
 3. If tests fail, fix them before proceeding.
 4. If test coverage for the new work is insufficient, add tests.
 

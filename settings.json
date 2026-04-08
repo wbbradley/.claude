@@ -1,10 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "statusLine": {
-    "type": "command",
-    "command": "~/bin/statusline.sh",
-    "padding": 2
-  },
   "env": {
     "BASH_DEFAULT_TIMEOUT_MS": "3600000",
     "BASH_MAX_TIMEOUT_MS": "3600000"
@@ -12,33 +7,42 @@
   "permissions": {
     "allow": [
       "Bash(*)",
-      "Read(~/.claude/skills)",
-      "Read(~/.local/bin/chk)",
-      "Read(/tmp/review-pr)",
-      "Search(/tmp/review-pr)",
-      "Read(~/.cargo)",
-      "Search(~/.cargo)",
-      "WebSearch"
+      "Read(*)",
+      "Search",
+      "WebSearch",
+      "Fetch"
     ],
     "deny": [
       "Read(~/.ssh)",
+      "Read(~/.sui)",
       "Read(~/.gnupg)",
       "Read(~/.password-store)"
     ]
   },
   "hooks": {
-    "PreToolUse": [{
-      "matcher": "Bash",
-      "hooks": [{
-        "type": "command",
-        "command": "shellsafety"
-      }]
-    }]
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "shellsafety"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/bin/statusline.sh",
+    "padding": 2
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "showClearContextOnPlanAccept": true,
   "voiceEnabled": true,
+  "autoMemoryEnabled": false,
+  "autoDreamEnabled": false,
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555

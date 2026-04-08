@@ -20,8 +20,9 @@ ask the user to resolve them before proceeding.
 
 ### Step 2: Detect phase
 
-Check whether the current task already has a detailed implementation plan — look for an
-`### Implementation Plan` subsection under the task. This distinguishes two phases:
+Check whether the current task already has a detailed implementation plan — look for a
+subsection whose heading contains "implementation" or "plan" (any heading level, e.g.
+`### Implementation Plan`, `#### Implementation`, etc.). This distinguishes two phases:
 
 - **No implementation plan yet** → go to Step 3 (Planning).
 - **Implementation plan exists** → go to Step 4 (Execution).
