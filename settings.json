@@ -29,6 +29,70 @@
             "command": "shellsafety"
           }
         ]
+      },
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-resume"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-cleanup"
+          }
+        ]
       }
     ]
   },

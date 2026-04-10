@@ -133,7 +133,7 @@ do not proceed with a broken release.
 | Rust | `cargo build --release` (also updates `Cargo.lock`) |
 | Haskell/Cabal | `cabal build --allow-newer` |
 | Node.js | `npm run build` (if a `build` script exists in package.json) |
-| Python | skip (no standard build step) |
+| Python | skip (unless you know the standard build command for this project) |
 | Generic | skip unless you can identify an obvious build command |
 
 ### Step 6: Commit the version bump
