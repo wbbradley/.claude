@@ -98,7 +98,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "~/bin/statusline.sh",
+    "command": "statusline",
     "padding": 2
   },
   "alwaysThinkingEnabled": true,
