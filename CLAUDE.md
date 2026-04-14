@@ -27,3 +27,5 @@ When editing code in any language with a standard formatter, just bluntly edit t
 worrying about whitespace, then use the formatter to fix it. (ie: gofmt, chk in the case of Rust, as
 mentioned above.)
 
+When something from PLAN.md is done, move it to COMPLETED.md, do not ~~mark it as complete~~ in
+PLAN.md.
