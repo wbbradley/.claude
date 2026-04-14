@@ -2,6 +2,9 @@ agents/
 backups/
 cache/
 debug/
+channels/
+settings.local.json
+CLAUDE.local.md
 history.jsonl
 keybindings.json
 mcp-needs-auth-cache.json
