@@ -41,7 +41,7 @@ the context transition:
 ```markdown
 ## Post-Plan Execution Steps
 
-After the user approves this plan, execute these steps in order:
+Execute these steps in order:
 
 ### Implement
 Execute the plan above. Work methodically — use task lists to track progress. Prefer editing
@@ -81,6 +81,5 @@ present the plan via ExitPlanMode and wait for the user's response.
 
 ### Steps 3-7 (post-plan)
 
-These steps are carried forward inside the plan document itself (see the `Post-Plan Execution
-Steps` section above). After exiting plan mode and receiving user approval, follow those
-instructions from the plan.
+These steps are carried forward inside the plan document itself (see the `Post-Plan Execution Steps`
+section above). After exiting plan mode, follow those instructions from the plan.
