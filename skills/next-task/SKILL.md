@@ -14,15 +14,13 @@ after exiting plan mode, the remaining instructions come with it.
 
 ### Step 1: Determine what to work on
 
-Read PLAN.md at the project root. Identify the first incomplete task under "Next Up". Summarize
-the task to the user in 2-3 sentences and confirm it's what they want to work on. If the user
-provides arguments via `$ARGUMENTS`, treat that as guidance on what to work on instead. If the "Next
-Up" section is empty, or doesn't exist, re-organize the PLAN.md as such. If the top item is large
-(likely to consume more than 120k tokens for an LLM), please break it into smaller sub-tasks first,
-then proceed as per these instructions but on a unit of work that will fit.
-
-If the next step is ambiguous or there are open questions listed in PLAN.md that block this task,
-ask the user to resolve them before proceeding.
+Read PLAN.md at the project root. Identify the first incomplete task under "Next Up". If the user
+provides arguments via `$ARGUMENTS`, treat that as guidance on what to work on instead. Summarize
+the task to the user in 1-2 sentences. If it is highly ambiguous as to what the next item is, then
+pause to confirm your next task with the user; in most cases you should be able to just continue
+without confirmation. If the top item is large (likely to consume more than 120k tokens for an LLM),
+please break it into smaller sub-tasks first, update the PLAN.md, then proceed as per these
+instructions but on a unit of work that will fit.
 
 ### Step 2: Plan
 
@@ -73,10 +71,9 @@ then update those. If new future work items were discovered, add them. Leftover 
 count as future work items unless they would naturally be handled by existing future work. Do not
 ever add or commit PLAN.md or COMPLETED.md to git.
 
-### Yield
-Tell the user what was accomplished and what the next task would be. Then stop and yield back
-to the user — let them review before starting the next task. The user can invoke `/next-task`
-again to continue.
+### Loop!
+You are done with the prior task. Now, execute the next-task skill again! Ideally you can churn
+through all of the tasks this way.
 ```
 
 Write the plan and exit plan mode for user review. Do NOT ask "would you like to proceed?" — just

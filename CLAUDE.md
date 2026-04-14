@@ -5,10 +5,6 @@ world in a broken state, regardless of how you found it.
 When adding mainstream dependencies in Rust, always use `cargo add` rather than manually editing
 Cargo.toml. This ensures we get the latest versions.
 
-When you have come up with a plan, never ask me "Would you like to proceed?" Just write the plan to
-disk and yield back to me so that I can manually initiate the next steps. Never `git add PLAN.md`,
-we use it independently from source control.
-
 When in a cargo workspace, never attempt to check a single sub-crate in a workspace like `cargo
 check -p some-sub-crate`. In general to check compilation and to re-format Rust code, just run `chk`
 which is in my PATH at ~/.local/bin. It runs `cargo fmt ...` as well as `cargo clippy --fix`, and
@@ -26,6 +22,3 @@ When searching for code in repos, prefer `git -C dir grep` over other options li
 When editing code in any language with a standard formatter, just bluntly edit the code without
 worrying about whitespace, then use the formatter to fix it. (ie: gofmt, chk in the case of Rust, as
 mentioned above.)
-
-When something from PLAN.md is done, move it to COMPLETED.md, do not ~~mark it as complete~~ in
-PLAN.md.
