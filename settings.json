@@ -11,7 +11,7 @@
       "Search",
       "WebSearch",
       "Write(/tmp/*)",
-      "Fetch"
+      "Fetch(*)"
     ],
     "deny": [
       "Read(~/.ssh)",
@@ -105,11 +105,12 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "showClearContextOnPlanAccept": true,
-  "voiceEnabled": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
+  "voiceEnabled": true,
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  }
+  },
+  "awaySummaryEnabled": false
 }
