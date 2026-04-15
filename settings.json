@@ -11,6 +11,7 @@
       "Search",
       "WebSearch",
       "Write(/tmp/*)",
+      "Fetch(docs.rs)",
       "Fetch(*)"
     ],
     "deny": [

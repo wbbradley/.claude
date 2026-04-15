@@ -76,8 +76,8 @@ You are done with the prior task. Now, execute the next-task skill again! Ideall
 through all of the tasks this way.
 ```
 
-Write the plan and exit plan mode for user review. Do NOT ask "would you like to proceed?" — just
-present the plan via ExitPlanMode and wait for the user's response.
+Write the plan and exit plan mode. Do NOT ask "would you like to proceed?" unless you are truly
+confused.
 
 ### Steps 3-7 (post-plan)
 
