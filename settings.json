@@ -115,5 +115,6 @@
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
   },
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "awaySummaryEnabled": false
 }
