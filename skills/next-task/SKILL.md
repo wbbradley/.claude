@@ -70,10 +70,6 @@ If upcoming PLAN.md items need modifications due to a change during this plan's 
 then update those. If new future work items were discovered, add them. Leftover compiler warnings
 count as future work items unless they would naturally be handled by existing future work. Do not
 ever add or commit PLAN.md or COMPLETED.md to git.
-
-### Loop!
-You are done with the prior task. Now, execute the next-task skill again! Ideally you can churn
-through all of the tasks this way.
 ```
 
 Write the plan and exit plan mode. Do NOT ask "would you like to proceed?" unless you are truly

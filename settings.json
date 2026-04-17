@@ -19,7 +19,8 @@
       "Read(~/.sui)",
       "Read(~/.gnupg)",
       "Read(~/.password-store)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "hooks": {
     "PreToolUse": [
@@ -105,6 +106,7 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
+  "awaySummaryEnabled": false,
   "showClearContextOnPlanAccept": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
@@ -112,5 +114,6 @@
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  }
+  },
+  "skipAutoPermissionPrompt": true
 }
