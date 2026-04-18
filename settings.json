@@ -19,8 +19,7 @@
       "Read(~/.sui)",
       "Read(~/.gnupg)",
       "Read(~/.password-store)"
-    ],
-    "defaultMode": "auto"
+    ]
   },
   "hooks": {
     "PreToolUse": [
