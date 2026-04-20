@@ -19,7 +19,8 @@
       "Read(~/.sui)",
       "Read(~/.gnupg)",
       "Read(~/.password-store)"
-    ]
+    ],
+    "defaultMode": "default"
   },
   "hooks": {
     "PreToolUse": [
@@ -37,7 +38,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+            "command": "~/src/tmux-claude/bin/tmux-claude-notify"
           }
         ]
       }
@@ -48,7 +49,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+            "command": "~/src/tmux-claude/bin/tmux-claude-notify"
           }
         ]
       }
@@ -59,7 +60,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+            "command": "~/src/tmux-claude/bin/tmux-claude-notify"
           }
         ]
       }
@@ -70,7 +71,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-notify"
+            "command": "~/src/tmux-claude/bin/tmux-claude-notify"
           }
         ]
       }
@@ -81,7 +82,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-resume"
+            "command": "~/src/tmux-claude/bin/tmux-claude-resume"
           }
         ]
       }
@@ -92,7 +93,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/wbbradley/src/tmux-claude/bin/tmux-claude-cleanup"
+            "command": "~/src/tmux-claude/bin/tmux-claude-cleanup"
           }
         ]
       }
@@ -104,16 +105,16 @@
     "padding": 2
   },
   "alwaysThinkingEnabled": true,
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "awaySummaryEnabled": false,
   "showClearContextOnPlanAccept": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
+  "skipAutoPermissionPrompt": true,
+  "useAutoModeDuringPlan": false,
   "voiceEnabled": true,
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  },
-  "skipAutoPermissionPrompt": true,
-  "awaySummaryEnabled": false
+  }
 }

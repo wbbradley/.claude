@@ -1,5 +1,7 @@
+.credentials.json
 agents/
 backups/
+file-history/
 cache/
 debug/
 channels/
