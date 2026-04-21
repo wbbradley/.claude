@@ -9,27 +9,19 @@ You are adding knowledge from the current conversation into Will's personal wiki
 at `~/wiki` (a git repo). The thread you are in right now is the source
 material — the user has decided something in it is worth preserving.
 
-Your job: distill the learning, place it at the right spot in the ontology,
-update the ontology, and commit. Keep the tree sane as it grows.
+Your job: distill the learning into a leaf note, place it at the right spot in
+the ontology, update the ontology, and commit. Leaves carry the weight — dense,
+structured, with references. Indexes stay thin. Keep the tree sane as it grows.
 
 If the user passed `$ARGUMENTS`, treat it as a hint about what to capture
 (a topic name, a suggested path, "the Rust part", etc.). Otherwise infer
 from context.
 
-## Guiding principles
-
-- **Intermediate nodes stay lightweight.** `~/wiki/index.md` and any per-topic
-  `index.md` are navigation aids, not content. One-line descriptions per
-  entry. No prose essays. No duplicated content from leaves. If an index is
-  growing, that is a signal to split the sub-tree — not to expand the index.
-  Context burn on navigation must stay low.
-- **Leaves carry the weight.** The actual knowledge lives in leaf notes.
-  Dense, structured, with references. Write for a future reader (often
-  you) who has zero thread context.
-- **Don't duplicate.** If a relevant note already exists, extend it rather
-  than creating a parallel one. Update its `updated:` frontmatter.
-- **Kebab-case slugs** for file and directory names. Full words, no
-  abbreviations except well-known ones (`llm`, `rag`, `api`).
+**Conventions live in `~/wiki/CLAUDE.md`** — file layout, frontmatter shape,
+lightweight-index rule, move/rename rules, commit format. Read it first. This
+skill covers only the workflow (what to do in what order); `CLAUDE.md` covers
+the invariants (what the output must look like). Do not duplicate its content
+here.
 
 ## Step 1: Read the ontology
 
@@ -40,10 +32,8 @@ the index claims.
 
 ## Step 2: Distill the learning
 
-From the current thread, write a concise note. Include:
+From the current thread, write a concise note. Content guidance:
 
-- **YAML frontmatter**: `title`, `created` (today, YYYY-MM-DD), `updated`
-  (same as created on first write), `tags` (list of kebab-case topic tags).
 - **A one-paragraph lede** stating the takeaway in plain terms.
 - **Sections** for sub-topics. Use headings, lists, tables, code blocks.
   Preserve structure — a flat blob is harder to scan.
@@ -65,10 +55,12 @@ Rules:
 
 1. **Prefer existing topics.** If the subject fits under a branch that already
    exists, put it there. Don't invent a parallel topic.
-2. **Create new branches sparingly.** A new top-level topic is a commitment.
+2. **Don't duplicate.** If a relevant note already exists, extend it rather
+   than creating a parallel one. Bump its `updated` frontmatter.
+3. **Create new branches sparingly.** A new top-level topic is a commitment.
    If the note is the only thing under it, ask: will there plausibly be
    more? If not, file it under an existing branch.
-3. **Depth is free, but only up to a point.** Three or four levels is fine
+4. **Depth is free, but only up to a point.** Three or four levels is fine
    (`ai/llms/ingestion/html-to-markdown.md`). Beyond that the path becomes
    noise.
 
@@ -89,12 +81,9 @@ a better shape for the tree. Specific triggers:
 - **Two branches are near-duplicates.** Merge them.
 
 If you think the tree needs reshaping, **propose the change to the user before
-executing it**. Show: current shape, proposed shape, which files would
-`git mv` where, and which `index.md` entries would update. Only proceed on
-approval. Reorganization is cheap when done deliberately, expensive when done
-silently.
-
-`git mv` preserves history — always use it instead of delete+create.
+executing it**. Show: current shape, proposed shape, which files would move
+where, and which `index.md` entries would update. Only proceed on approval.
+Reorganization is cheap when done deliberately, expensive when done silently.
 
 ## Step 5: Write files
 
@@ -103,25 +92,20 @@ silently.
 2. Update `~/wiki/index.md` to list the note — one line, descriptive enough
    that a reader can tell whether it's what they want, short enough to not
    bloat the index.
-3. If the sub-tree under the new leaf now has enough notes to deserve its
-   own overview, optionally create a `<topic>/index.md` with the same
-   lightweight rules (topic name, one paragraph of scope, bullet list of
-   child leaves).
+3. If the sub-tree under the new leaf has enough notes to deserve its own
+   overview, optionally create a `<topic>/index.md`.
 
 Do not write documentation or README files beyond what's needed here.
 
 ## Step 6: Commit
 
-Use a semantic commit. Examples:
+Commit format lives in `~/wiki/CLAUDE.md`. Typical messages:
 
 - `docs(wiki): add note on html-to-markdown for LLM ingestion`
 - `docs(wiki): extend ai/llms/html-to-markdown with llms.txt probing notes`
 - `refactor(wiki): split rust out of ai/llms into its own top-level topic`
 
-Stage explicitly (`git -C ~/wiki add <paths>`), don't `git add -A` — avoids
-catching stray files. Then commit. Do not push unless the user asks.
-
-Never add attributions (no `Co-Authored-By`, no "Generated with …").
+Do not push unless the user asks.
 
 ## Step 7: Report back
 
