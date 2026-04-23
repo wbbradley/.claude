@@ -5,10 +5,9 @@ world in a broken state, regardless of how you found it.
 When adding mainstream dependencies in Rust, always use `cargo add` rather than manually editing
 Cargo.toml. This ensures we get the latest versions.
 
-When in a cargo workspace, never attempt to check a single sub-crate in a workspace like `cargo
-check -p some-sub-crate`. In general to check compilation and to re-format Rust code, just run `chk`
-which is in my PATH at ~/.local/bin. It runs `cargo fmt ...` as well as `cargo clippy --fix`, and
-some other checks.
+When in a cargo workspace, to check compilation and to re-format Rust code, just run `chk` which is
+in my PATH at ~/.local/bin. It runs `cargo fmt ...` as well as `cargo clippy --fix`, and some other
+checks.
 
 We always use module.rs, and module/submodule.rs file layout, not mod.rs file layout.
 
