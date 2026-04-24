@@ -20,8 +20,8 @@
       "Read(~/.gnupg)",
       "Read(~/.password-store)"
     ],
-    "disableAutoMode": "disable",
-    "defaultMode": "default"
+    "defaultMode": "default",
+    "disableAutoMode": "disable"
   },
   "hooks": {
     "PreToolUse": [
@@ -47,7 +47,8 @@
   "showClearContextOnPlanAccept": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
-  "skipAutoPermissionPrompt": true,
+  "fileCheckpointingEnabled": false,
+  "agentPushNotifEnabled": false,
   "useAutoModeDuringPlan": false,
   "voiceEnabled": true,
   "autoMemory": false,
