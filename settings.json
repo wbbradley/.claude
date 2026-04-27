@@ -54,5 +54,9 @@
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  }
+  },
+  "verbose": true,
+  "preferredNotifChannel": "notifications_disabled",
+  "autoCompactEnabled": false,
+  "remoteControlAtStartup": false
 }
