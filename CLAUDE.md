@@ -21,3 +21,6 @@ When searching for code in repos, prefer `git -C dir grep` over other options li
 When editing code in any language with a standard formatter, just bluntly edit the code without
 worrying about whitespace, then use the formatter to fix it. (ie: gofmt, chk in the case of Rust, as
 mentioned above.)
+
+Never ask me to /schedule an agent in some time. If you think that needs to happen, use the /later
+skill right now to append that to the PLAN.md.
