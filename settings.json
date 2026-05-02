@@ -47,16 +47,16 @@
   "showClearContextOnPlanAccept": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
+  "verbose": true,
+  "preferredNotifChannel": "notifications_disabled",
+  "autoCompactEnabled": false,
   "fileCheckpointingEnabled": false,
+  "remoteControlAtStartup": false,
   "agentPushNotifEnabled": false,
   "useAutoModeDuringPlan": false,
   "voiceEnabled": true,
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  },
-  "verbose": true,
-  "preferredNotifChannel": "notifications_disabled",
-  "autoCompactEnabled": false,
-  "remoteControlAtStartup": false
+  }
 }
