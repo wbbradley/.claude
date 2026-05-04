@@ -63,8 +63,7 @@ user and only apply them with approval.
 
 ### Step 4: Retrospective
 
-Tell the user:
-- What task was added and a brief summary of its scope.
-- How it fits into the larger plan — dependencies, synergies, or tensions with other tasks.
+In the retrospective, only surface details if there are outstanding questions or concerns.
+Otherwise, just say "The plan is ready."
 
 Then stop and yield to the user.
