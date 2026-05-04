@@ -9,7 +9,7 @@ When in a cargo workspace, to check compilation and to re-format Rust code, just
 in my PATH at ~/.local/bin. It runs `cargo fmt ...` as well as `cargo clippy --fix`, and some other
 checks.
 
-We always use module.rs, and module/submodule.rs file layout, not mod.rs file layout.
+We always use module.rs + module/submodule.rs file layout, not mod.rs file layout.
 
 When asked to put together a git commit, do not add any attributions to anyone, including yourself.
 Use semantic git commits.

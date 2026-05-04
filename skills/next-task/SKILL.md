@@ -49,18 +49,19 @@ existing files over creating new ones. Follow all project conventions from CLAUD
 When in a cargo workspace, check compilation by running `chk` (never `cargo check ...` directly).
 
 ### Verify
+
 1. Run the project's build/lint command (Rust: `chk`, Haskell: `cabal build`, etc.).
 2. Run the project's test suite (Rust: `cargo nextest run`, Haskell: `cabal test`, etc.).
 3. If tests fail, fix them before proceeding.
 4. If test coverage for the new work is insufficient, add tests.
 
 ### Commit
-Stage and commit the changes with a semantic commit message. Do not add any attributions to
-anyone, including yourself. Follow the project's commit message style (see `git log --oneline`).
-If there are pre-existing modified files, and they don't look harmful or strange, go ahead and
-commit them, too.
+
+Follow the project's commit message style (see `git log --oneline`). If there are pre-existing
+modified files and they don't look harmful, go ahead and commit them, too.
 
 ### Update PLAN.md
+
 Read `PLAN.md`. **Remove** the completed task entirely from the "Next Up" section — do not leave
 it in place with a [DONE] tag, strikethrough, or any other marker. The task and its related
 subsections should no longer appear in PLAN.md at all. PLAN.md should not have any sort of "Done"
