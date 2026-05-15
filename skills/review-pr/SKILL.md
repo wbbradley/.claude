@@ -82,3 +82,4 @@ tendency to not review the changes deeply enough.
 - Write the findings in well-formatted markdown
 - Verdict: any critical -> REQUEST_CHANGES, any major -> COMMENT, only minor/none -> APPROVE.
 - No positive/praise comments. Be specific — state what's wrong and what breaks.
+- Do not touch the live PR without talking to the user.
