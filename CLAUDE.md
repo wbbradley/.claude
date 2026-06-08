@@ -11,8 +11,8 @@ checks.
 
 We always use module.rs + module/submodule.rs file layout, not mod.rs file layout.
 
-When asked to put together a git commit, do not add any attributions to anyone, including yourself.
-Use semantic git commits.
+When asked to put together a git commit or PR, do not add any attributions to anyone, including
+yourself. Use semantic git commits.
 
 For git commands in a specific directory, avoid `cd ... && git ...` instead use `git -C dir ...`
 
