@@ -112,7 +112,7 @@
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
   "theme": "dark",
-  "verbose": false,
+  "verbose": true,
   "preferredNotifChannel": "notifications_disabled",
   "autoCompactEnabled": false,
   "fileCheckpointingEnabled": false,
