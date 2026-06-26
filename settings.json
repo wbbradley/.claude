@@ -100,6 +100,10 @@
       }
     ]
   },
+  "worktree": {
+    "bgIsolation": "none",
+    "baseRef": "fresh"
+  },
   "statusLine": {
     "type": "command",
     "command": "statusline",
@@ -111,8 +115,9 @@
   "showClearContextOnPlanAccept": true,
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
-  "theme": "dark",
-  "verbose": false,
+  "skipWorkflowUsageWarning": true,
+  "theme": "auto",
+  "verbose": true,
   "preferredNotifChannel": "notifications_disabled",
   "autoCompactEnabled": false,
   "fileCheckpointingEnabled": false,
@@ -124,5 +129,5 @@
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
   },
-  "skipWorkflowUsageWarning": true
+  "tui": "fullscreen"
 }
