@@ -101,13 +101,8 @@
     ]
   },
   "worktree": {
-<<<<<<< Updated upstream
     "bgIsolation": "none",
     "baseRef": "fresh"
-=======
-    "baseRef": "fresh",
-    "bgIsolation": "none"
->>>>>>> Stashed changes
   },
   "statusLine": {
     "type": "command",
@@ -134,6 +129,5 @@
   "autoMemory": false,
   "feedbackSurveyState": {
     "lastShownTime": 1855530480555
-  },
-  "tui": "fullscreen"
+  }
 }
