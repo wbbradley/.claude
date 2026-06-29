@@ -101,8 +101,13 @@
     ]
   },
   "worktree": {
+<<<<<<< Updated upstream
     "bgIsolation": "none",
     "baseRef": "fresh"
+=======
+    "baseRef": "fresh",
+    "bgIsolation": "none"
+>>>>>>> Stashed changes
   },
   "statusLine": {
     "type": "command",
@@ -113,6 +118,7 @@
   "effortLevel": "xhigh",
   "awaySummaryEnabled": false,
   "showClearContextOnPlanAccept": true,
+  "tui": "fullscreen",
   "autoMemoryEnabled": false,
   "autoDreamEnabled": false,
   "skipWorkflowUsageWarning": true,
